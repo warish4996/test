@@ -1,0 +1,22 @@
+<html>
+<body>
+
+<p>Click the button to sort the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    
+var Sort = ["AXXXX", "YUGBBN", "PGGG", "DFGHB","JHGHHGV","BHBCFG","FDGBV","GFVVB","EDFVV"];
+document.getElementById("demo").innerHTML = Sort;
+
+function myFunction() {
+  Sort.sort();
+  document.getElementById("demo").innerHTML = Sort;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<html>
+    <head>
+        <script>
+            function findOddEven(){
+                //get the input value
+                var even = document.getElementById('num').value;
+                var textNode=document.createTextNode(even);
+                var liNode=document.createElement("li");
+                    
+                    liNode.appendChild(textNode);
+
+                  
+                    
+ 
+                //if the value of c is 2 then it is a prime number
+                //because a prime number should be exactly divisible by 2 times only (itself and 1)
+                if ( even % 2 == 0){
+                    
+                   documnet.getElementById('list').appendChild(liNode);
+                    let output=document.createTextNode("EVEN"),
+                    linode=document.createElement("li");
+                    
+                    linode.appendChild(output)
+                    document.getElementById('list2').appendChild(linode);
+                }else{
+                    document.getElementById('list').appendChild(liNode);
+                    let output=document.createTextNode("ODD"),
+                    linode=document.createElement("li");
+                    
+                    linode.appendChild(output)
+                    document.getElementById('list2').appendChild(linode);
+                }
+
+              
+            }        
+        </script>
+    </head>
+    <body>
+        <h2>find Odd or Even number!</h2>
+        
+            Enter a number:  <input type="number" id="num" name="num"  /> 
+            <input type="button" value="Find Odd or Even" onclick="findOddEven()" name="find" />
+            <div style="margin-top: 10px;" id="result"></div>
+            <ul id="list" >
+                <p>Input</p>
+            </ul>
+            <ul id="list2">
+                <p>Output</p>
+            </ul>
+        
+    </body>
+</html>
